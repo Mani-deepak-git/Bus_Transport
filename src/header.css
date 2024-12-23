@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f8f9fa; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.header  p{
+    position:relative;
+    width:max-content;
+}
+.header p::after{
+    position: absolute;
+    content: '';
+    background:linear-gradient(to right ,red,blue) ;
+    border-radius: 100px;
+    transition: 100ms;
+    height:4px;
+    width:0;
+    bottom: 0;
+    left:0;
+}
+.header p:hover::after{
+    width:100%;
+}
+
+.header img {
+    height: 60px;
+    width: auto; 
+}
+
+.header p {
+    margin: 0 15px; /* Space between items */
+    cursor: pointer; /* Change cursor on hover */
+    transition: color 0.3s;
+     font-size: larger;
+     font-weight: bold;
+}
+
+.Home {
+    font-weight: bold; /* Emphasize 'Home' */
+}
+
+.Buses, .Contact, .Login {
+    font-size: 16px; /* Standard font size */
+}

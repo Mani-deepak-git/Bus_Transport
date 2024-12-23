@@ -1,0 +1,241 @@
+
+.home {
+    background-color: #f9f9f9;
+    padding: 20px;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.p {
+    font-size: 18px;
+    line-height: 10px;
+}
+
+.Features {
+    font-size: 32px;
+    color: #a94442;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.Provide{
+    font-size: 32px;
+    color: goldenrod;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Bus-details {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Bus-details div {
+    text-align: center;
+    padding: 10px;
+}
+
+.Bus-captain, .Boarding-crew, .Comfy-seaters {
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Bus-captain img, .Boarding-crew img, .Comfy-seaters img {
+    width: 35px;
+    height: 35px;
+    margin-top: 16px;
+}
+
+.Bus-captain h4, .Boarding-crew h4 , .Comfy-seaters h4{
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Bus-captain p, .Boarding-crew p, .Comfy-seaters p {
+    font-size: 16px;
+    color: #555;
+}
+
+hr {
+    margin-top: 15px;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+}
+
+.Comfy-seaters p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+}
+.space{
+    display: flex;
+    margin-left: 30px;
+}
+
+.Boarding-crew img{
+    top: 20px;
+    margin-top: 20px;
+}
+.Bus-captain img{
+    margin-top: 20px;
+}
+.set1{
+    position:relative;
+    display: grid;
+    align-self: last baseline;
+    z-index: 10;
+    width:50%;
+    height: auto;
+    padding-bottom: 100px;
+}
+.set{
+    position:absolute;
+    gap:20px;
+    padding-left:100px;
+    
+   
+}
+.ma{
+    display: flex;
+    gap:20px;
+}
+/* img[alt='school-bus-img']{
+    width:100%;
+} */
+ .img{
+    width:100%;
+    height: auto;
+    padding:0;
+    margin: 0;
+ }
+ .bus-img {
+    position: relative; 
+    opacity: 0; 
+    transform: translateX(5);
+    transition: transform 1s ease-in, opacity 1s ease-in; 
+}
+
+.bus-img.visible {
+    opacity: 1;
+    transform: translateX(-5vw);
+}
+.travels-report{
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 20px;
+   height: 700px;
+   width: 98%;
+   margin:auto; 
+   overflow: hidden;
+   
+   /* background-color: #ffd5d5; */
+   text-align: center;
+
+}
+
+.background-shapes::before{
+   content: '';
+   position: absolute;
+   bottom: 0;
+   right:30px;
+   width: 250px;
+   height: 250px;
+   background-color: #f1e60c;
+   clip-path: polygon(100% 0,100% 100%,0 100%);
+   
+}
+.background-shapes::after{
+    content: '';
+    position: absolute;
+    background-color: #f1e60c;
+    width: 250px;
+    height: 250px;
+    top: 90px;
+    left:0;
+    clip-path: polygon(100% 0,0 0,0 100%);
+}
+/* .contentMove{
+    position: absolute;
+    z-index: 1;
+} */
+.card-container{
+    
+  width:40%;
+  height:20%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:10px;
+  transform: translate(300px,0px);
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    padding:10px;
+}
+.card p{
+    color: #b10000 ;
+}
+.content hr{
+    color:#b10000;
+}
+.content h2{
+    color: goldenrod;
+    margin-bottom: 0;
+}
+.content h1{
+    color: #b10000;
+    margin-top: 0;
+}
+.content .p{
+    color: #555;
+}
+.report-image1 {
+    width:450px;
+    height: auto;
+    margin-top: 30px;
+    right:0;
+    top:20px;
+    z-index: 1;
+    bottom:5px;
+    opacity: 0; 
+    transform: translateX(35vw);
+    transition: transform 2s ease-in, opacity 1s ease-in; 
+    margin-bottom: 100px;
+}
+.report-image1.visile {
+    opacity: 1;
+    transform: translateX(-5vw);
+}
+.content{
+    margin-top: 300px;
+}
